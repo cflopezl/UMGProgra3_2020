@@ -50,4 +50,9 @@ public class Estudiante implements Comparador{
                 Estudiante e = (Estudiante)q;
         return this.numMat > e.numMat;
         }
+    
+        @Override
+    public String toString(){
+        return "("+this.numMat+")"+this.nombre;
+    }
 }
