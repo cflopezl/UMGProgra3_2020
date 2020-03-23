@@ -50,4 +50,22 @@ public class ArbolBinarioBusqueda extends ArbolBinario{
         else throw new Exception("Nodo duplicado");
         return raizSub;
     }
+    
+    public void mostrarArbol(Nodo raiz, String espacio){
+        if(raiz==null){
+            System.out.println(espacio + "null");
+        }else{
+            mostrarArbol(raiz.subarbolDcho(), espacio+"       "); 
+            System.out.println(espacio + "      /" );
+            System.out.println(espacio + raiz.dato);
+            System.out.println(espacio + "      \\" );
+            mostrarArbol(raiz.subarbolIzdo(), espacio+"       ");            
+        }
+    }
+    
+    
+    
+    
+    
+    
 }
