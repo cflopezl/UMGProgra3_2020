@@ -16,6 +16,7 @@ public class EjemploHash {
      */
     public static void main(String[] args) {
         //Un arreglo para almacenar la información de una Tabla Hash
+        //Ejemplo
         Catedratico.tamanio=35;
         Catedratico []arrCat = new Catedratico[Catedratico.tamanio];
         
@@ -27,6 +28,7 @@ public class EjemploHash {
         arrCat[c.hashCode()]=c;
         
         //---------------------------------------------------
+        //Ejemplo para almacenar otro objeto
         Alumno.tamanio=101;
         Alumno []arrAlumno = new Alumno[Alumno.tamanio];
         Alumno a = new Alumno("2010-7690-123456", "Walter Garcia");
